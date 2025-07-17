@@ -130,13 +130,11 @@ async function getManifest(config) {
 
   const years = generateArrayOfYears(20);
   const genres_movie = await getGenreList(language, "movie").then(genres => {
-    const sortedGenres = genres.map(el => el.name).sort();
-    return sortedGenres;
+    return genres.map(el => el.name).sort();
   });
 
   const genres_series = await getGenreList(language, "series").then(genres => {
-    const sortedGenres = genres.map(el => el.name).sort();
-    return sortedGenres;
+    return genres.map(el => el.name).sort();
   });
 
   const languagesArray = await getLanguages();
@@ -216,6 +214,12 @@ async function getManifest(config) {
     `Active Catalogs: ${catalogs.length}`
   ].join(' | ');
 
+  const idPrefixes = ["tmdb:"];
+  if (provideImdbId) {
+    idPrefixes.push("tt");
+    idPrefixes.push("tvdb:");
+  }
+
   return {
     id: packageJson.name,
     version: packageJson.version,
@@ -226,7 +230,7 @@ async function getManifest(config) {
     description: "Fork of the TMDB addon for use with Omni (https://omni.stkc.win). Current settings: " + activeConfigs,
     resources: ["catalog", "meta"],
     types: ["movie", "series"],
-    idPrefixes: provideImdbId ? ["tmdb:", "tt"] : ["tmdb:"],
+    idPrefixes: idPrefixes,
     stremioAddonsConfig,
     behaviorHints: {
       configurable: true,
