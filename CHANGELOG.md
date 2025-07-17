@@ -1,3 +1,63 @@
+# [1.3.0](https://github.com/aves-omni/tmdb-addon/compare/v1.2.0...v1.3.0) (2025-07-17)
+
+
+### Bug Fixes
+
+* add null safety checks for cache in checkSeasons utility ([f338e6e](https://github.com/aves-omni/tmdb-addon/commit/f338e6e80bdd5f62a744fc8b33ecf46a3bf3c60d))
+* **checkSeasons:** remove unnecessary state=open parameter from issue query ([bf1dea5](https://github.com/aves-omni/tmdb-addon/commit/bf1dea5c3ab59f2718fe2bfce9575e258c21704e))
+* **diferentOrder:** corrigir episodeGroupId para "Naruto" ([c66d5ef](https://github.com/aves-omni/tmdb-addon/commit/c66d5ef2bb351368ca652dccf9baae4e42e92ee2)), closes [#1005](https://github.com/aves-omni/tmdb-addon/issues/1005)
+* **diferentOrder:** fix episodeGroupId for "Bakemonogatari" ([9baa186](https://github.com/aves-omni/tmdb-addon/commit/9baa1867db6a5155665d18af9c62e2422d9ae8f4)), closes [#1024](https://github.com/aves-omni/tmdb-addon/issues/1024)
+* fix query variable usage in getSearch ([c4397ff](https://github.com/aves-omni/tmdb-addon/commit/c4397ff229211fb7dc2a9beeb6d3664e13d7ccbc)), closes [#117](https://github.com/aves-omni/tmdb-addon/issues/117)
+* **getLogo:** correct variable naming for FanartTvApi initialization ([599f614](https://github.com/aves-omni/tmdb-addon/commit/599f6140a9e3c3279c49122a1de4a85c1cc3c6b5))
+* **parseCast:** remove debug log for count parameter ([6350d97](https://github.com/aves-omni/tmdb-addon/commit/6350d97e0ae319e463ad5e2bd103b42a0672121c))
+* prevent null reference error in parseConfig function ([3904c08](https://github.com/aves-omni/tmdb-addon/commit/3904c087a3a6811bc6e9d3039c86cf52b37d128d)), closes [#987](https://github.com/aves-omni/tmdb-addon/issues/987)
+
+
+### Features
+
+* add automatic season count check and GitHub issue creation for TMDB vs Stremio discrepancies ([b89aede](https://github.com/aves-omni/tmdb-addon/commit/b89aede5d525b6788471b8147a2eafa7efe3429e))
+* add lz-string dependency ([44b4e52](https://github.com/aves-omni/tmdb-addon/commit/44b4e52be52049cf69d5adb0af90dba473fcbea5))
+* add support for new configuration keys in loadConfigFromUrl ([db2888e](https://github.com/aves-omni/tmdb-addon/commit/db2888e782b9730b62a24cd5047ba5d154ff861a))
+* **config:** add 'hideInCinemaTag' and improve cast count logic ([9c27afd](https://github.com/aves-omni/tmdb-addon/commit/9c27afd83b5c190ac1490313b59b4e97b94087e6)), closes [#111](https://github.com/aves-omni/tmdb-addon/issues/111)
+* **ConfigContext:** update loadConfigFromUrl to use decompression and improve catalog enabled logic ([47c3cf7](https://github.com/aves-omni/tmdb-addon/commit/47c3cf758983d151dc568a06001591b91ba4fc88))
+* **diferentImdbId:** add new entry for "Dragon Ball" ([5692f82](https://github.com/aves-omni/tmdb-addon/commit/5692f8219457230ef7a6935b0e3dcfb6f605a42f)), closes [#1045](https://github.com/aves-omni/tmdb-addon/issues/1045)
+* **diferentImdbId:** add new entry for "Dragon Ball" ([56a781e](https://github.com/aves-omni/tmdb-addon/commit/56a781ee85eda1216d850785a61eaded4b001854))
+* **diferentOrder:** add new entry for "A Will Eternal" ([0150e6a](https://github.com/aves-omni/tmdb-addon/commit/0150e6a3bba22f02e815eaff7940e43709b71477)), closes [#1138](https://github.com/aves-omni/tmdb-addon/issues/1138)
+* **diferentOrder:** add new entry for "American Dad!" ([8d198d8](https://github.com/aves-omni/tmdb-addon/commit/8d198d8585ff74f17cfc6027edf8273ed0579f3e)), closes [#981](https://github.com/aves-omni/tmdb-addon/issues/981)
+* **diferentOrder:** add new entry for "Bleach" ([232d786](https://github.com/aves-omni/tmdb-addon/commit/232d786d47d2fa4ad84434e8ad0e8de436f667c1)), closes [#1002](https://github.com/aves-omni/tmdb-addon/issues/1002)
+* **diferentOrder:** add new entry for "Blue Lock" ([82580ad](https://github.com/aves-omni/tmdb-addon/commit/82580add2dd1fbba386aaa3616178cb9fbc19c10)), closes [#1178](https://github.com/aves-omni/tmdb-addon/issues/1178)
+* **diferentOrder:** add new entry for "Bungo Stray Dogs" ([99f427c](https://github.com/aves-omni/tmdb-addon/commit/99f427ca5f60f3fabe2a1a0e642dcbc2c042fa4b)), closes [#1011](https://github.com/aves-omni/tmdb-addon/issues/1011)
+* **diferentOrder:** add new entry for "Caméra café" ([22e92f6](https://github.com/aves-omni/tmdb-addon/commit/22e92f6781fc03761494cfa4ac76ea9e1f1edb0a)), closes [#971](https://github.com/aves-omni/tmdb-addon/issues/971)
+* **diferentOrder:** add new entry for "Cold Case Files" ([6aecdd6](https://github.com/aves-omni/tmdb-addon/commit/6aecdd6475d260cc3314ae37ebe23c33f93e2f1c)), closes [#1001](https://github.com/aves-omni/tmdb-addon/issues/1001)
+* **diferentOrder:** add new entry for "DAN DA DAN" ([b7e6ccf](https://github.com/aves-omni/tmdb-addon/commit/b7e6ccf0d2e43bbf1df0c583aba418eaf9f9d8a8))
+* **diferentOrder:** add new entry for "Detective Conan" ([c1d4d45](https://github.com/aves-omni/tmdb-addon/commit/c1d4d4549398127b70bb51d946fd75676d6ea67d)), closes [#967](https://github.com/aves-omni/tmdb-addon/issues/967)
+* **diferentOrder:** add new entry for "Dragon Ball Super" ([05e5c3f](https://github.com/aves-omni/tmdb-addon/commit/05e5c3f6d32b9d4ed05fa4f279f31c17f4f25030)), closes [#1046](https://github.com/aves-omni/tmdb-addon/issues/1046)
+* **diferentOrder:** add new entry for "Dragon Ball Z Kai" ([028b44e](https://github.com/aves-omni/tmdb-addon/commit/028b44e3b806132be2f8d06d1680da49772d12f5)), closes [#1106](https://github.com/aves-omni/tmdb-addon/issues/1106)
+* **diferentOrder:** add new entry for "Farscape" ([d385146](https://github.com/aves-omni/tmdb-addon/commit/d385146915ca0be4d4be7171ac8b037c52d97d39)), closes [#975](https://github.com/aves-omni/tmdb-addon/issues/975)
+* **diferentOrder:** add new entry for "Fate/Extra Last Encore" ([90fb58c](https://github.com/aves-omni/tmdb-addon/commit/90fb58ce83e24f87d7f0ff9cf0476e506626f463)), closes [#1026](https://github.com/aves-omni/tmdb-addon/issues/1026)
+* **diferentOrder:** add new entry for "Fate/stay night [Unlimited Blade Works]" ([adcf09d](https://github.com/aves-omni/tmdb-addon/commit/adcf09dfd04b3ec3c774e0b56ec02c5912768fb7)), closes [#1179](https://github.com/aves-omni/tmdb-addon/issues/1179)
+* **diferentOrder:** add new entry for "Go! Go! Loser Ranger!" ([ddb4111](https://github.com/aves-omni/tmdb-addon/commit/ddb4111e69d81b6756bbb175cf032c1ec3a51791)), closes [#1183](https://github.com/aves-omni/tmdb-addon/issues/1183)
+* **diferentOrder:** add new entry for "Jujutsu Kaisen" ([ad82357](https://github.com/aves-omni/tmdb-addon/commit/ad82357c945e88397fc4077ce1159eb960cdcb45)), closes [#1003](https://github.com/aves-omni/tmdb-addon/issues/1003)
+* **diferentOrder:** add new entry for "King of the Hill" ([5ba36ae](https://github.com/aves-omni/tmdb-addon/commit/5ba36ae5f5329e8b532e1302e472d593b4fdcbc1)), closes [#958](https://github.com/aves-omni/tmdb-addon/issues/958)
+* **diferentOrder:** add new entry for "Mashle: Magic and Muscles" ([d7ab38b](https://github.com/aves-omni/tmdb-addon/commit/d7ab38b7337967e52bb3dbd00b6b610b04f8ae56)), closes [#1068](https://github.com/aves-omni/tmdb-addon/issues/1068)
+* **diferentOrder:** add new entry for "My Dress-Up Darling" ([acda331](https://github.com/aves-omni/tmdb-addon/commit/acda331dbbff85e73aa7677c0cae309416267ada))
+* **diferentOrder:** add new entry for "Pac-Man and the Ghostly Adventures" ([77647f5](https://github.com/aves-omni/tmdb-addon/commit/77647f50dc5539aa657f7093f8f78a3ecf936c09)), closes [#1110](https://github.com/aves-omni/tmdb-addon/issues/1110)
+* **diferentOrder:** add new entry for "Pokémon" ([eb635e2](https://github.com/aves-omni/tmdb-addon/commit/eb635e20ece5ea32b55e6ca36a8a31111840545d)), closes [#965](https://github.com/aves-omni/tmdb-addon/issues/965)
+* **diferentOrder:** add new entry for "Ranma ½" ([565cd8d](https://github.com/aves-omni/tmdb-addon/commit/565cd8db26652f3db978c5af6e2ab8ead1dd75a5)), closes [#1086](https://github.com/aves-omni/tmdb-addon/issues/1086)
+* **diferentOrder:** add new entry for "Running Man" ([533c302](https://github.com/aves-omni/tmdb-addon/commit/533c3020bfe9622eb4752191606660577caf9a31)), closes [#1067](https://github.com/aves-omni/tmdb-addon/issues/1067)
+* **diferentOrder:** add new entry for "Rurouni Kenshin" ([241af72](https://github.com/aves-omni/tmdb-addon/commit/241af72fee921131512c7191b59e40ba1533490e)), closes [#1146](https://github.com/aves-omni/tmdb-addon/issues/1146)
+* **diferentOrder:** add new entry for "Sister Wives" ([b0bbc7a](https://github.com/aves-omni/tmdb-addon/commit/b0bbc7afda8bb95887b7261468e153b7b408b1ea)), closes [#1169](https://github.com/aves-omni/tmdb-addon/issues/1169)
+* **diferentOrder:** add new entry for "The 100 Girlfriends Who Really, Really, Really, Really, REALLY Love You" ([a62e9e2](https://github.com/aves-omni/tmdb-addon/commit/a62e9e2d88c5cbdbc1127b1c746396bf00489d23)), closes [#1031](https://github.com/aves-omni/tmdb-addon/issues/1031)
+* **diferentOrder:** add new entry for "Tomorrow Is Ours" ([c03de98](https://github.com/aves-omni/tmdb-addon/commit/c03de98001f647fd10ac3d463ea84f4263f753b4)), closes [#970](https://github.com/aves-omni/tmdb-addon/issues/970)
+* **diferentOrder:** add new entry for "Urusei Yatsura" ([2f19f18](https://github.com/aves-omni/tmdb-addon/commit/2f19f18e1f59c6cb3577054915b6147a1e6c1f61)), closes [#1083](https://github.com/aves-omni/tmdb-addon/issues/1083)
+* **diferentOrder:** add new entry for "Yu-Gi-Oh! 5D's" ([b9aa825](https://github.com/aves-omni/tmdb-addon/commit/b9aa825aa727e59006c6b3cf2a2f46e5a02b951e)), closes [#1176](https://github.com/aves-omni/tmdb-addon/issues/1176)
+* **diferentOrder:** add new entry for "Yu-Gi-Oh! Arc-V" ([5bde27e](https://github.com/aves-omni/tmdb-addon/commit/5bde27e3196ac535a694418100ea70eb0d75044b)), closes [#974](https://github.com/aves-omni/tmdb-addon/issues/974)
+* **diferentOrder:** add new entry for "Yu-Gi-Oh! Duel Monsters" ([2a2125c](https://github.com/aves-omni/tmdb-addon/commit/2a2125c5c46453c74e446d22dbb440fe139974f1)), closes [#1172](https://github.com/aves-omni/tmdb-addon/issues/1172)
+* **diferentOrder:** add new entry for "Yu-Gi-Oh! GX" ([a7fbbd2](https://github.com/aves-omni/tmdb-addon/commit/a7fbbd2d700ecc57401480bdeeba82e5214fe2d7)), closes [#1174](https://github.com/aves-omni/tmdb-addon/issues/1174)
+* **diferentOrder:** add new entry for "Zatch Bell!" ([61930bd](https://github.com/aves-omni/tmdb-addon/commit/61930bd3eb1622dcfbe2775af7b11327dbac144f)), closes [#1084](https://github.com/aves-omni/tmdb-addon/issues/1084)
+* **diferentOrder:** remove duplicate entry for "Jujutsu Kaisen" ([8c2aa28](https://github.com/aves-omni/tmdb-addon/commit/8c2aa28c01a0177e705a4dd27e3f48bc41c3af97))
+* **series:** Migrate series metadata fetching to TVmaze ([1d57e15](https://github.com/aves-omni/tmdb-addon/commit/1d57e15704f22f9c257c75a2b479ef59d40b343b))
+
 # [1.2.0](https://github.com/aves-omni/tmdb-addon/compare/v1.1.1...v1.2.0) (2025-07-17)
 
 
