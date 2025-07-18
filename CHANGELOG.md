@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/aves-omni/tmdb-addon/compare/v1.2.2...v1.2.3) (2025-07-18)
+
+
+### Bug Fixes
+
+* trigger build ([466ccca](https://github.com/aves-omni/tmdb-addon/commit/466ccca033022a0992c6ba819db003cfb51491d9))
+
 ## [1.2.2](https://github.com/aves-omni/tmdb-addon/compare/v1.2.1...v1.2.2) (2025-07-18)
 
 
