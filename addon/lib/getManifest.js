@@ -216,8 +216,6 @@ async function getManifest(config) {
     `Active Catalogs: ${catalogs.length}`
   ].join(' | ');
 
-  console.log(`Host name: ${process.env.HOST_NAME}`);
-  console.log(`Package: ${packageJson.version}`);
   return {
     id: packageJson.name,
     version: packageJson.version,

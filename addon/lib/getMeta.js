@@ -62,12 +62,10 @@ const buildMovieResponse = async (res, type, language, tmdbId, rpdbkey, config =
     getCachedImdbRating(res.external_ids?.imdb_id, type),
   ]);
 
-  console.log(`Configured cast count for movies: ${config.castCount}`);
   const imdbRating = imdbRatingRaw || res.vote_average?.toFixed(1) || "N/A";
   const castCount = config.castCount !== undefined ? Math.max(1, Number(config.castCount)) : undefined;
   const hideInCinemaTag = config.hideInCinemaTag === true || config.hideInCinemaTag === "true";
 
-  console.log(`Cast count for movies: ${castCount}`);
   const response = {
     imdb_id: res.imdb_id,
     country: Utils.parseCoutry(res.production_countries),
@@ -130,12 +128,10 @@ const buildTvResponse = async (res, type, language, tmdbId, rpdbkey, config = {}
     })
   ]);
 
-  console.log(`Configured cast count for series: ${config.castCount}`);
   const imdbRating = imdbRatingRaw || res.vote_average?.toFixed(1) || "N/A";
   const castCount = config.castCount !== undefined ? Math.max(1, Number(config.castCount)) : undefined;
   const hideInCinemaTag = config.hideInCinemaTag === true || config.hideInCinemaTag === "true";
 
-  console.log(`Cast count for series: ${castCount}`);
   const response = {
     country: Utils.parseCoutry(res.production_countries),
     description: res.overview,
