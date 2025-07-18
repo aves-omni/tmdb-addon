@@ -1,3 +1,10 @@
+## [1.2.7](https://github.com/aves-omni/tmdb-addon/compare/v1.2.6...v1.2.7) (2025-07-18)
+
+
+### Bug Fixes
+
+* remove debug console logs from manifest and meta modules ([9854eed](https://github.com/aves-omni/tmdb-addon/commit/9854eedb71f20b95a73ae599c1ac3e99e542c26e))
+
 ## [1.2.6](https://github.com/aves-omni/tmdb-addon/compare/v1.2.5...v1.2.6) (2025-07-18)
 
 
