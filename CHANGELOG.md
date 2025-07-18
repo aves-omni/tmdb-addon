@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/aves-omni/tmdb-addon/compare/v1.2.0...v1.2.1) (2025-07-18)
+
+
+### Bug Fixes
+
+* **meta:** pass full config to getMeta and remove cast count limit ([820a828](https://github.com/aves-omni/tmdb-addon/commit/820a8288955ab2462e4fc2afc3bf65926b633bce))
+* update version to 1.3.0 in package.json and package-lock.json ([86857c3](https://github.com/aves-omni/tmdb-addon/commit/86857c38c70daec190260a2680458fc19df2ce5d))
+
 # [1.2.0](https://github.com/aves-omni/tmdb-addon/compare/v1.1.1...v1.2.0) (2025-07-17)
 
 
