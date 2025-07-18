@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/aves-omni/tmdb-addon/compare/v1.2.1...v1.2.2) (2025-07-18)
+
+
+### Bug Fixes
+
+* build image ([01f902f](https://github.com/aves-omni/tmdb-addon/commit/01f902f7e131c25cab4fc6735e3dd64452f76713))
+
 ## [1.2.1](https://github.com/aves-omni/tmdb-addon/compare/v1.2.0...v1.2.1) (2025-07-18)
 
 
