@@ -63,7 +63,7 @@ const buildMovieResponse = async (res, type, language, tmdbId, rpdbkey, config =
   ]);
 
   const imdbRating = imdbRatingRaw || res.vote_average?.toFixed(1) || "N/A";
-  const castCount = config.castCount !== undefined ? Math.max(1, Math.min(5, Number(config.castCount))) : 5;
+  const castCount = config.castCount !== undefined ? Math.max(1, Number(config.castCount)) : undefined;
   const hideInCinemaTag = config.hideInCinemaTag === true || config.hideInCinemaTag === "true";
 
   const response = {
@@ -129,7 +129,7 @@ const buildTvResponse = async (res, type, language, tmdbId, rpdbkey, config = {}
   ]);
 
   const imdbRating = imdbRatingRaw || res.vote_average?.toFixed(1) || "N/A";
-  const castCount = config.castCount !== undefined ? Math.max(1, Math.min(5, Number(config.castCount))) : 5;
+  const castCount = config.castCount !== undefined ? Math.max(1, Number(config.castCount)) : undefined;
   const hideInCinemaTag = config.hideInCinemaTag === true || config.hideInCinemaTag === "true";
 
   const response = {
