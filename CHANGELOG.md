@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/aves-omni/tmdb-addon/compare/v1.2.3...v1.2.4) (2025-07-18)
+
+
+### Bug Fixes
+
+* add castCount config option to meta requests ([0d2675e](https://github.com/aves-omni/tmdb-addon/commit/0d2675eac68dad6dc4cc0dc8b33e6975f0d44fad))
+
 ## [1.2.3](https://github.com/aves-omni/tmdb-addon/compare/v1.2.2...v1.2.3) (2025-07-18)
 
 
