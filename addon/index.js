@@ -156,7 +156,6 @@ addon.get("/:catalogChoices?/meta/:type/:id.json", async function (req, res) {
   if (req.params.id.includes("tmdb:")) {
     const resp = await cacheWrapMeta(`${language}:${type}:${tmdbId}`, async () => {
       return await getMeta(type, language, tmdbId, rpdbkey, {
-        ...config,
         hideEpisodeThumbnails: config.hideEpisodeThumbnails === "true"
       });
     });
@@ -177,7 +176,6 @@ addon.get("/:catalogChoices?/meta/:type/:id.json", async function (req, res) {
     if (tmdbId) {
       const resp = await cacheWrapMeta(`${language}:${type}:${tmdbId}`, async () => {
         return await getMeta(type, language, tmdbId, rpdbkey, {
-          ...config,
           hideEpisodeThumbnails: config.hideEpisodeThumbnails === "true"
         });
       });
