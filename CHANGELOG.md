@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/aves-omni/tmdb-addon/compare/v1.2.5...v1.2.6) (2025-07-18)
+
+
+### Bug Fixes
+
+* log host name and package version for debugging ([e1a0831](https://github.com/aves-omni/tmdb-addon/commit/e1a0831aed7304f5f36787445b0b6b0d456e1451))
+
 ## [1.2.5](https://github.com/aves-omni/tmdb-addon/compare/v1.2.4...v1.2.5) (2025-07-18)
 
 
