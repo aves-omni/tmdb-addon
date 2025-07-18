@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/aves-omni/tmdb-addon/compare/v1.2.4...v1.2.5) (2025-07-18)
+
+
+### Bug Fixes
+
+* add debug logs for cast count configuration ([cb0d712](https://github.com/aves-omni/tmdb-addon/commit/cb0d712c7521644df64d54ed7fcd26b347cc6de8))
+
 ## [1.2.4](https://github.com/aves-omni/tmdb-addon/compare/v1.2.3...v1.2.4) (2025-07-18)
 
 
