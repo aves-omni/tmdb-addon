@@ -4,6 +4,14 @@
 ### Features
 
 * add proxy support to bypass TMDB regional blocks (India) ([f1c1071](https://github.com/aves-omni/tmdb-addon/commit/f1c1071d09fdc2c0c1fcd68014e6013e478fe19a)), closes [#1208](https://github.com/aves-omni/tmdb-addon/issues/1208)
+* add workflow_dispatch trigger to docker-deploy ([ed1c601](https://github.com/aves-omni/tmdb-addon/commit/ed1c601db7e2246f3defbe02b0e74411dc596336))
+
+# [1.3.0](https://github.com/aves-omni/tmdb-addon/compare/v1.2.7...v1.3.0) (2025-08-25)
+
+
+### Features
+
+* add proxy support to bypass TMDB regional blocks (India) ([f1c1071](https://github.com/aves-omni/tmdb-addon/commit/f1c1071d09fdc2c0c1fcd68014e6013e478fe19a)), closes [#1208](https://github.com/aves-omni/tmdb-addon/issues/1208)
 
 ## [1.2.7](https://github.com/aves-omni/tmdb-addon/compare/v1.2.6...v1.2.7) (2025-07-18)
 
